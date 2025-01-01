@@ -1,71 +1,62 @@
-/* Estilo básico */
+/* CSS para o site ONU HUB */
+
+/* Estilização geral */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fa;
     color: #333;
 }
 
 /* Navbar */
 nav {
-    background-color: #0056b3; /* Azul escuro da ONU */
+    background-color: #004a99;
     color: white;
-    padding: 15px 20px;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
-    margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    gap: 1rem;
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #d4e4ff; /* Azul claro da ONU */
+    text-decoration: underline;
 }
 
 /* Layout principal */
 .main-layout {
     display: flex;
-    min-height: 100vh;
 }
 
 /* Sidebar */
 .sidebar {
-    background-color: #e6f0ff; /* Azul muito claro */
-    width: 250px;
-    padding: 20px;
-    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background-color: #e6f2ff;
+    padding: 1rem;
+    border-right: 2px solid #cce0ff;
 }
 
 .sidebar h3 {
-    color: #0056b3;
-    margin-bottom: 15px;
-    font-size: 1.2em;
-    border-bottom: 2px solid #0056b3;
-    padding-bottom: 5px;
+    font-size: 1.2rem;
+    color: #004a99;
+    margin-bottom: 1rem;
 }
 
 .sidebar ul {
@@ -75,56 +66,64 @@ nav ul li a:hover {
 }
 
 .sidebar ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar ul li img {
+    width: 30px;
+    height: 30px;
 }
 
 .sidebar ul li a {
-    color: #0056b3;
+    color: #004a99;
     text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s;
 }
 
 .sidebar ul li a:hover {
-    color: #002f6c; /* Azul mais escuro */
+    text-decoration: underline;
 }
 
 /* Conteúdo principal */
 .content {
     flex: 1;
-    padding: 20px;
-    background-color: #f8faff; /* Azul claro de fundo */
+    padding: 1rem;
+}
+
+.map-intro {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.map-intro h2 {
+    font-size: 1.8rem;
+    color: #004a99;
+}
+
+.map-intro p {
+    font-size: 1rem;
+    color: #333;
 }
 
 .map-container {
-    text-align: center;
-}
-
-.map-container h2 {
-    color: #0056b3;
-    margin-bottom: 20px;
+    border: 2px solid #cce0ff;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 500px;
 }
 
 .map-container iframe {
     width: 100%;
-    height: 500px;
+    height: 100%;
     border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
-    background-color: #003d80; /* Azul escuro da ONU */
-    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
+    padding: 1rem;
+    background-color: #004a99;
+    color: white;
 }
